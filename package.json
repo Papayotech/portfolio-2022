@@ -2,6 +2,23 @@
   "name": "portfolio-2022",
   "version": "0.1.0",
   "private": true,
+  "contributors": [
+    {
+      "name": "Cesar Javier Ortiz Montero",
+      "email": "cesarjavieortizmontero@gmail.com",
+      "role": "Full-stack developer"
+    },
+    {
+      "name": "Camilo Santana",
+      "email": "andres@rulocode.com",
+      "role": "Front-end & DevOps developer"
+    },
+    {
+      "name": "Sara Amaya",
+      "email": "Saritamaya.401@gmail.com",
+      "role": "Product Designer"
+    }
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -11,13 +28,18 @@
   "dependencies": {
     "next": "12.1.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "styled-components": "^5.3.3"
   },
   "devDependencies": {
     "@types/node": "17.0.21",
     "@types/react": "17.0.40",
+    "@types/styled-components": "^5.1.24",
     "eslint": "8.10.0",
     "eslint-config-next": "12.1.0",
     "typescript": "4.6.2"
+  },
+  "resolutions": {
+    "styled-components": "^5"
   }
 }

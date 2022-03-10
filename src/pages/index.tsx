@@ -1,10 +1,8 @@
-import type { NextPage } from 'next'
-import {Button} from '../components/atoms/button/src/index'
+import type { NextPage } from 'next';
+import { ButtonComponent } from '../components/atoms/button/src';
 
 const Home: NextPage = () => {
-  return (
-    <Button />
-  )
-}
+  return <ButtonComponent />;
+};
 
-export default Home
+export default Home;
