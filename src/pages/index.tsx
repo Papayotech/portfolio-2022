@@ -1,3 +1,4 @@
+import React from 'react'
 import type { NextPage } from 'next';
 import { ButtonComponent } from '../components/atoms/button/src';
 
