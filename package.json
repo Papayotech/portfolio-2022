@@ -24,6 +24,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "pre-commit": "yarn lint --fix && git add -A .",
+    "pre-push": "yarn pre-commit",
     "prepare": "husky install"
   },
   "dependencies": {
