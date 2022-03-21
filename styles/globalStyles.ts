@@ -28,6 +28,19 @@ export const lightTheme = {
   ternary: '#000000',
   codeColor: '#D121C5',
 };
+export const darkTheme = {
+  body: '#000',
+  main: '#5C14DB',
+  mainColor: '#FFFFFF',
+  accent: '#E5DE17',
+  text: '#fff',
+  accentColor: '#161616',
+  secondary: '#FFFFFF',
+  secondaryColor: '#343434',
+  dullColor: '#343434',
+  ternary: '#000000',
+  codeColor: '#D121C5',
+};
 
 export const GlobalStyles = createGlobalStyle<theme>`
 * {
