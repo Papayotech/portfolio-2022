@@ -16,14 +16,17 @@ interface StyleProps {
 }
 const StyledButton = styled.button<StyleProps>`
   background: ${(props) => (props.isActive ? 'palevioletred' : 'white')};
-  color: ${(props) => (props.isActive ? 'white' : 'palevioletred')};
-  margin: 1em;
+  color: #020202;
+  border-radius: 8px ;
   font-size: 1em;
-  padding: 0.25em 1em;
-  border: 2px solid palevioletred;
-  border-radius: 3px;
+  padding: 16px 32px;
+  outline: none;
+  border: none;
+  width: 100%;
+  font-weight: bold;
+  font-size: 18px;
   cursor: pointer;
-  background-color: ${(props) => (props.variant === VariantType.primary ? 'blue' : 'white')};
+  background-color: ${(props) => (props.variant === VariantType.primary ? '#F3D00d' : 'white')};
 `;
 
 export const ButtonComponent = React.forwardRef<HTMLButtonElement, IProps>((props) => {

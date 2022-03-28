@@ -1,8 +1,9 @@
 export default {
     hero: {
         title: "Hola, Soy Andrés",
+        name: 'Andrés',
         profession: "Desarrolador Frontend ",
-        resume: "Creating the next web generation. I want to make sure that the internet is a safe, satisfying and secure place for everyone.",
+        resume: "Creando la nueva generación de la web. Disfruto contribuyendo a que el internet sea un lugar seguro, veloz y agradable para todos.",
         callToAction: "Contacta Me"
     }
 }

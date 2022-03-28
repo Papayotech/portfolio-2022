@@ -8,11 +8,17 @@ interface Props {
   imgWidth?: string;
 }
 
-const StyledImageContainer = styled.div`
+
+interface StyleProps {
+  imgHeight: string;
+  imgWidth: string;
+}
+const StyledImageContainer = styled.div<StyleProps>`
   overflow: hidden;
   border-radius: 50%;
-  /* width: 200px;
-  height: 200px; */
+  width: ${(props) => (props.imgWidth ? props.imgWidth : '200px')};
+
+  height: ${(props) => (props.imgHeight ? props.imgHeight : '200px')}; 
   max-width: 200px;
   position: relative;
   span {
@@ -22,9 +28,10 @@ const StyledImageContainer = styled.div`
 `;
 
 export const ImageContainer: React.FC<Props> = (props: Props) => {
+
   const { imgHeight = '120', imgWidth = '120', imgURL } = props;
   return (
-    <StyledImageContainer>
+    <StyledImageContainer imgWidth={imgWidth} imgHeight={imgHeight}>
       <Image
         src={imgURL}
         alt="profile_image"

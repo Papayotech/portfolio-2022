@@ -45,14 +45,16 @@ export const darkTheme = {
 export const GlobalStyles = createGlobalStyle<theme>`
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 32px 16px;
   background: ${({ theme }) => theme.body};
   color: ${({ theme }) => theme.text};
-  font-family: sans-serif !important;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-style: normal;
   transition: all 0.50s linear;
